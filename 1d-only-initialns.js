@@ -10,3 +10,5 @@ loop through all the elements and split them using string method
 return new array
 
 */
+
+console.log(checkInitials(["Ash Ketchum", "Lucy Heartfilia", "Yugi Moto"]), 'should be ', ["A.K.", "L.H.", "Y.M."])
