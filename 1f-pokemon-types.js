@@ -13,3 +13,5 @@ function describePokemon(array){
     return new array
 }
 */
+
+console.log(describePokemon([{ name: 'Bulbasaur', type: 'Grass' }, { name: 'Charmander', type: 'Fire' }, { name: 'Squirtle', type: 'Water' }]), 'should be ', ["Bulbasaur is a grass type Pokémon.", "Charmander is a fire type Pokémon.", "Squirtle is a water type Pokémon."]);
