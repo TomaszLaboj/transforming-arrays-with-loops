@@ -9,3 +9,6 @@ function addGreeting(array){
     return new array
 }
 */
+
+
+console.log(addGreeting(["Ash", "Beth", "Ciara"]), 'should be', ["Hello, Ash!", "Hello, Beth!", "Hello, Ciara!"]);
