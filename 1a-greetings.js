@@ -9,6 +9,12 @@ function addGreeting(array){
     return new array
 }
 */
-
+function addGreeting(array){
+    const newArray = [];
+    for(element of array){
+        newArray.push(`Hello, ${element}!`)
+    }
+    return newArray;
+}
 
 console.log(addGreeting(["Ash", "Beth", "Ciara"]), 'should be', ["Hello, Ash!", "Hello, Beth!", "Hello, Ciara!"]);
