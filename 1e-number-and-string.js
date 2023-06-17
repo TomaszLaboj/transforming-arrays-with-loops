@@ -11,4 +11,7 @@ loop through every element and push number to the the new array as an object usi
 return new array
 */
 
+
 console.log(transformToString([4, -3.2]), 'should be ',  [{ asNumber: 4, asString: '4' }, { asNumber: -3.2, asString: '-3.2' }])
+
+console.log(transformToString([5, 6]), 'should be ',  [{ asNumber: 5, asString: '5' }, { asNumber: 6, asString: '6' }])
