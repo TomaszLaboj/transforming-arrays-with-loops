@@ -14,4 +14,12 @@ function describePokemon(array){
 }
 */
 
-console.log(describePokemon([{ name: 'Bulbasaur', type: 'Grass' }, { name: 'Charmander', type: 'Fire' }, { name: 'Squirtle', type: 'Water' }]), 'should be ', ["Bulbasaur is a grass type Pokémon.", "Charmander is a fire type Pokémon.", "Squirtle is a water type Pokémon."]);
+function describePokemon(array){
+    const newArray = [];
+    for(element of array){
+        newArray.push(`${element.name} is a ${element.type.toLowerCase()} type Pokémon.`)
+    }
+    return newArray;
+}
+
+console.log(describePokemon([{ name: 'Bulbasaur', type: 'Grass' }, { name: 'Charmander', type: 'Fire' }, { name: 'Squirtle', type: 'Water' }]), 'should be ', ["Bulbasaur is a grass type Pokémon.", "Charmander is a fire type Pokémon.", "Squirtle is a water type Pokémon."])
