@@ -10,3 +10,10 @@ return transformed array
 
 */
 
+
+console.log(transformtoLowerCase(["academy.tech", "GITHUB.COM", "StackOverflow.com", "mOzIlLa.OrG"]), 
+'should be \n', ["academy.tech", "github.com", "stackoverflow.com", "mozilla.org"])
+
+console.log(transformtoLowerCase([]))
+console.log(transformtoLowerCase('QWER'))
+console.log(transformtoLowerCase([123,123,123,'123','123']))
