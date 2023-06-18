@@ -13,10 +13,9 @@ return transformed array
 */
 
 function transformToLowerCase(array){
-const transformedArray = [];
-for(element of array){
-    transformedArray.push(element.toLowerCase());
-}
+
+const transformedArray = array.map(element => element.toLowerCase());
+
     return transformedArray;
 }
 
