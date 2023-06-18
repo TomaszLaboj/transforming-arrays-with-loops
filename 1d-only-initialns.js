@@ -10,14 +10,9 @@ loop through all the elements and split them using string method and interpolati
 return new array
 
 */
-function checkInitials(array){
-    const newArray = [];
-    for (element of array){
-        let FirstSecond = element.split(' ');
-        newArray.push(`${FirstSecond[0]}.${FirstSecond[1]}.`);
-        
-    }
 
+function checkInitials(array){
+    const newArray = array.map(element => `${element.split(' ')[0][0]}.${element.split(' ')[1][0]}.`)
     return newArray;
 }
 

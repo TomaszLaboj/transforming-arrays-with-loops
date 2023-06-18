@@ -12,11 +12,10 @@ function invertNumbers(array){
 }
 */
 
+
 function invertNumbers(array){
-    const invertedArray = [];
-    for(element of array){
-        invertedArray.push(element*-1);
-    }
+    const invertedArray = array.map(element => element * -1);
+    
     return invertedArray;
 }
 

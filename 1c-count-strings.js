@@ -10,11 +10,9 @@ loop through each element and return lenght of the string
 return new array
 */
 
+
 function countCharacters(array){
-    const newArray = [];
-    for(element of array){
-        newArray.push(element.length);
-    }
+    const newArray = array.map(element => element.length);
     return newArray;
 }
 

@@ -10,11 +10,10 @@ loop through every element and push number to the the new array as an object usi
 
 return new array
 */
+
 function insertToObject(array){
-    const newArray = [];
-    for(element of array){
-        newArray.push({asNumber:element,asString:`${element}`});
-    }
+    const newArray = array.map(element => ({asNumber:element,asString:`${element}`}))
+  
     return newArray;
 }
 

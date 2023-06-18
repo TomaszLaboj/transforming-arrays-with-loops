@@ -14,11 +14,11 @@ function describePokemon(array){
 }
 */
 
+
 function describePokemon(array){
-    const newArray = [];
-    for(element of array){
-        newArray.push(`${element.name} is a ${element.type.toLowerCase()} type Pokémon.`)
-    }
+    const newArray = array.map(element => (`${element.name} is a ${element.type.toLowerCase()} type Pokémon.`))
+
+    
     return newArray;
 }
 

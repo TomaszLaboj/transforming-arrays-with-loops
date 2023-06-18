@@ -10,10 +10,11 @@ function addGreeting(array){
 }
 */
 function addGreeting(array){
-    const newArray = [];
-    for(element of array){
-        newArray.push(`Hello, ${element}!`)
-    }
+    // const newArray = [];
+    // for(element of array){
+    //     newArray.push(`Hello, ${element}!`)
+    // }
+    const newArray = array.map(element => `Hello, ${element}!`)
     return newArray;
 }
 
